@@ -1,0 +1,656 @@
+<!--main.html-->
+<!DOCTYPE HTML>
+<html> 
+       </head> 
+   <!-- create table -->
+   
+   <body background="https://img.freepik.com/free-vector/plain-blue-sky-background_1308-20781.jpg?size=626&ext=jpg"> 
+      <div align="center"><div class = title ><b><i>CONVERTERS</i></b></div></div> 
+      <textarea rows="4" cols="40">Hi! This website is useful for unit conversions.It has currency, length, temperature, speed, mass and time converters. This site is also assists with a general calculator. Each link mentioned below will takes you to the respective conversion mechanism. Each converter is coded efficiently with maximum 15 float point precisions.THANK YOU!</textarea>
+      <div align="left">
+     <ol type="i">
+      <li><a href="gen.html">General calculator</a></li><br> <li><a href="curr.html">Currency converter</a></li><br> <li><a href="leng.html">Length converter</a></li><br> <li><a href="temp.html">Temperature converter</a></li><br><li><a href="speed.html">Speed converter</a></li><br><li> <a href="mass.html">Mass converter</a></li><br> <li><a href="time.html">Time converter</a></li>
+     </ol>
+       </div> 
+   </body> 
+</html>  
+
+
+<!--gen.html-->
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#00CED1;
+}
+</style>
+<title>GENERAL CALCULATOR</title>
+<script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <!-- for styling -->
+      <style> 
+         .title{ 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 210px; 
+         color:green; 
+         border: solid black 2px; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:green; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 
+  
+</head>
+<body>
+<table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text"id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="Ac" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table>
+   </body>
+</html>
+
+<!--curr.html-->
+<html>
+<head>
+<title>CURRENCY CONVERTER</title>
+<style type="text/css">
+body
+{
+ background-color:#FFFAF0;
+}
+</style>
+<script type="text/javascript">
+
+function usd()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.014;
+alert(c)
+}
+function eur()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.013;
+alert(c)
+}
+function jpy()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*1.52;
+alert(c)
+}
+function hkd()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.11;
+alert(c)
+}
+function cny()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.099;
+alert(c)
+}
+function aud()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.020;
+alert(c)
+}
+function cad()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.018;
+alert(c)
+}
+function myr()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.058;
+alert(c)
+}
+function nzd()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*0.021;
+alert(c)
+}
+function lkr()
+{
+ var a=parseInt(document.getElementById("a").value);
+ c=a*2.54;
+alert(c)
+}
+</script>
+</head>
+<body>
+<img src="https://www.investopedia.com/thmb/XNN0mAPVTjnrYO_UEhb0zeWMLo8=/2121x1414/filters:fill(auto,1)/international-banknotes-from-world-major-countries-using-as-forex-or-financial-economy-background--us-dollar--uk-pound--euro--japanese-yen--indian-rupee--chinese-yuan--thai-baht-900778652-8967505c78d5406c84e4ed824b32f6de.jpg" width="100" height="50"> <b><u>CURRENCY CONVERTER:</u></b><br>
+</br>
+<form>
+ENTER INR:
+<input type="text" name="a" id="a">
+<table border="1">
+<tr>
+  
+<input type="button" value="USD" onclick="usd()">
+<input type="button" value="EUR" onclick="eur()">
+<input type="button" value="JPY" onclick="jpy()">
+<input type="button" value="HKD" onclick="hkd()">
+<input type="button" value="CNY" onclick="cny()">
+<input type="button" value="AUD" onclick="aud()">
+<input type="button" value="CAD" onclick="cad()">
+<input type="button" value="MYR" onclick="myr()">
+<input type="button" value="NZD" onclick="nzd()">
+<input type="button" value="LKR" onclick="lkr()">
+</tr>
+</body>
+</html>  
+
+<!--len.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#DCDCDC;
+}
+</style>
+</head>
+<title>LENGTH CONVERTER</title>
+<body>
+<img src="https://calcpark.com/wp-content/uploads/2019/10/length-unit-conversion-calcpark-1200x400.jpg" width="100" height="50"> <b><u>LENGTH CONVERTER:</u></b><br>
+<p>FEET->OTHER UNITS:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConvertera(this.value)" onchange="LengthConvertera(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMeters"></span></p>
+<p>Inches: <span id="outputInches"></span></p>
+<p>Centimetres: <span id="outputCm"></span></p>
+<p>Yards: <span id="outputYards"></span></p>
+<p>Kilometeres: <span id="outputKms"></span></p>
+<p>Miles: <span id="outputMiles"></span></p>
+<p>METRES->OTHER UNITS:</p>
+<p>
+  <label>Metres</label>
+  <input id="inputFeet" type="number" placeholder="Metres" oninput="LengthConverterb(this.value)" onchange="LengthConverterb(this.value)">
+</p>
+
+<p>Feet: <span id="outputFeetm"></span></p>
+<p>Inches: <span id="outputInchesm"></span></p>
+<p>Centimetres: <span id="outputCmm"></span></p>
+<p>Yards: <span id="outputYardsm"></span></p>
+<p>Kilometeres: <span id="outputKmsm"></span></p>
+<p>Miles: <span id="outputMilesm"></span></p>
+<p>INCHES->OTHER UNITS:</p>
+
+<p>
+  <label>Inches</label>
+  <input id="inputFeet" type="number" placeholder="Inches" oninput="LengthConverterc(this.value)" onchange="LengthConverterc(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMetersi"></span></p>
+<p>Feet: <span id="outputFeeti"></span></p>
+<p>Centimetres: <span id="outputCmi"></span></p>
+<p>Yards: <span id="outputYardsi"></span></p>
+<p>Kilometeres: <span id="outputKmsi"></span></p>
+<p>Miles: <span id="outputMilesi"></span></p>
+<p>CENTIMETRES->OTHER UNITS</p>
+<p>
+  <label>Centimetres</label>
+  <input id="inputFeet" type="number" placeholder="Centimetres" oninput="LengthConverterd(this.value)" onchange="LengthConverterd(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMeterscm"></span></p>
+<p>Inches: <span id="outputInchescm"></span></p>
+<p>Feet: <span id="outputFeetcm"></span></p>
+<p>Yards: <span id="outputYardscm"></span></p>
+<p>Kilometeres: <span id="outputKmscm"></span></p>
+<p>Miles: <span id="outputMilescm"></span></p>
+<p>YARDS->OTHER UNITS:</p>
+
+<p>
+  <label>Yards</label>
+  <input id="inputFeet" type="number" placeholder="Yards" oninput="LengthConvertere(this.value)" onchange="LengthConvertere(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMetersy"></span></p>
+<p>Inches: <span id="outputInchesy"></span></p>
+<p>Centimetres: <span id="outputCmy"></span></p>
+<p>Feet: <span id="outputFeety"></span></p>
+<p>Kilometeres: <span id="outputKmsy"></span></p>
+<p>Miles: <span id="outputMilesy"></span></p><p>KILOMETRES->OTHER UNITS:</p>
+
+<p>
+  <label>Kilometres</label>
+  <input id="inputFeet" type="number" placeholder="Kilometres" oninput="LengthConverterf(this.value)" onchange="LengthConverterf(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMeterskm"></span></p>
+<p>Inches: <span id="outputIncheskm"></span></p>
+<p>Centimetres: <span id="outputCmkm"></span></p>
+<p>Yards: <span id="outputYardskm"></span></p>
+<p>Feet: <span id="outputFeetkm"></span></p>
+<p>Miles: <span id="outputMileskm"></span></p>
+<p>MILES->OTHER UNITS:</p>
+
+<p>
+  <label>Miles</label>
+  <input id="inputFeet" type="number" placeholder="Miles" oninput="LengthConverterg(this.value)" onchange="LengthConverterg(this.value)">
+</p>
+
+
+
+<p>Meters: <span id="outputMetersmi"></span></p>
+<p>Inches: <span id="outputInchesmi"></span></p>
+<p>Centimetres: <span id="outputCmmi"></span></p>
+<p>Yards: <span id="outputYardsmi"></span></p>
+<p>Kilometeres: <span id="outputKmsmi"></span></p>
+<p>Feet: <span id="outputFeetmi"></span></p>
+<script>
+function LengthConvertera(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+  document.getElementById("outputInches").innerHTML=valNum*12;
+  document.getElementById("outputCm").innerHTML=valNum/0.032808;
+  document.getElementById("outputYards").innerHTML=valNum*0.3333;
+  document.getElementById("outputKms").innerHTML=valNum/3280.8;
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+function LengthConverterb(valNum) {
+  document.getElementById("outputFeetm").innerHTML=valNum*3.2808;
+  document.getElementById("outputInchesm").innerHTML=valNum*39.370;
+  document.getElementById("outputCmm").innerHTML=valNum/0.01;
+  document.getElementById("outputYardsm").innerHTML=valNum*1.0936;
+  document.getElementById("outputKmsm").innerHTML=valNum/1000;
+  document.getElementById("outputMilesm").innerHTML=valNum*0.00062137;
+}
+function LengthConverterc(valNum) {
+  document.getElementById("outputMetersi").innerHTML=valNum/39.370;
+  document.getElementById("outputFeeti").innerHTML=valNum*0.083333;
+  document.getElementById("outputCmi").innerHTML=valNum/0.39370;
+  document.getElementById("outputYardsi").innerHTML=valNum*0.027778;
+  document.getElementById("outputKmsi").innerHTML=valNum/39370;
+  document.getElementById("outputMilesi").innerHTML=valNum*0.000015783;
+}
+function LengthConverterd(valNum) {
+  document.getElementById("outputMeterscm").innerHTML=valNum/100;
+  document.getElementById("outputInchescm").innerHTML=valNum*0.39370;
+  document.getElementById("outputFeetcm").innerHTML=valNum*0.032808;
+  document.getElementById("outputYardscm").innerHTML=valNum*0.010936;
+  document.getElementById("outputKmscm").innerHTML=valNum/100000;
+  document.getElementById("outputMilescm").innerHTML=valNum*0.0000062137;
+}
+function LengthConvertere(valNum) {
+  document.getElementById("outputMetersy").innerHTML=valNum/1.0936;
+  document.getElementById("outputInchesy").innerHTML=valNum*36;
+  document.getElementById("outputCmy").innerHTML=valNum/0.010936;
+  document.getElementById("outputFeety").innerHTML=valNum*3;
+  document.getElementById("outputKmsy").innerHTML=valNum/1039.6;
+  document.getElementById("outputMilesy").innerHTML=valNum*0.00056818;
+}
+function LengthConverterf(valNum) {
+  document.getElementById("outputMeterskm").innerHTML=valNum*1000;
+  document.getElementById("outputIncheskm").innerHTML=valNum*39370;
+  document.getElementById("outputCmkm").innerHTML=valNum*100000;
+  document.getElementById("outputYardskm").innerHTML=valNum*1093.6;
+  document.getElementById("outputFeetkm").innerHTML=valNum*3280.8;
+  document.getElementById("outputMileskm").innerHTML=valNum*0.62137;
+}
+function LengthConverterg(valNum) {
+  document.getElementById("outputMetersmi").innerHTML=valNum/0.00062137;
+  document.getElementById("outputInchesmi").innerHTML=valNum*63360;
+  document.getElementById("outputCmmi").innerHTML=valNum/0.0000062137;
+  document.getElementById("outputYardsmi").innerHTML=valNum*1760;
+  document.getElementById("outputKmsmi").innerHTML=valNum/0.62137;
+  document.getElementById("outputFeetmi").innerHTML=valNum*5280;
+}
+</script>
+</body>
+</html>
+
+
+<!--temp.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#ADFF2F;
+}
+</style>
+</head>
+<title>TEMPERATURE CONVERTER</title>
+<body>
+<img src="https://lh3.googleusercontent.com/deo8BExm7QqZ23Delw7OeqiannvfwMzJWxy8nvxRtyX0vbFuBvZvUfPDhw7Nykik_nM" width="100" height="50"> <br><b><u>TEMPERATURE CONVERTER:</u></b><br>
+<p>FARENHEIT->OTHER UNITS:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+<p>CELCIUS->OTHER UNITS:</p>
+
+<p>
+  <label>Celcius</label>
+  <input id="inputFahrenheit" type="number" placeholder="Celcius" oninput="temperatureConverterb(this.value)" onchange="temperatureConverterb(this.value)">
+</p>
+<p>Farenheit: <span id="outputFarenheitc"></span></p>
+<p>Kelvin: <span id="outputKelvinc"></span></p>
+<p>KELVIN->OTHER UNITS:</p>
+
+<p>
+  <label>Kelvin</label>
+  <input id="inputFahrenheit" type="number" placeholder="Kelvin" oninput="temperatureConverterc(this.value)" onchange="temperatureConverterc(this.value)">
+</p>
+<p>Celcius: <span id="outputCelciusk"></span></p>
+<p>Farenheit: <span id="outputFarenheitk"></span></p>
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+function temperatureConverterb(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFarenheitc").innerHTML=(valNum*1.8)+32;
+  document.getElementById("outputKelvinc").innerHTML=(valNum+273.15);
+}
+function temperatureConverterc(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelciusk").innerHTML=(valNum-273.5);
+  document.getElementById("outputFarenheitk").innerHTML=((valNum-273.15)*1.8)+32;
+}
+</script>
+
+</body>
+</html>
+
+
+<!--speed.html-->
+<!DOCTYPE html>
+<html>
+<title>SPEED CONVERTER</title>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#FFEBCD;
+}
+</style>
+</head>
+<body >
+<img src="https://images-na.ssl-images-amazon.com/images/I/4132Jbsyv8L._SY355_.png" width="100" height="50"> <b><u>SPEED CONVERTER:</u></b><br>
+<p>MPH->OTHER UNITS:</p>
+
+<p>
+  <label>MPH</label>
+  <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+</p>
+<p>KPH: <span id="outputKPH"></span></p>
+<p>Knots: <span id="outputKnots"></span></p>
+<p>KPH->OTHER UNITS:</p>
+
+<p>
+  <label>KPH</label>
+  <input id="inputMPH" type="number" placeholder="KPH" oninput="speedConverterb(this.value)" onchange="speedConverterb(this.value)">
+</p>
+<p>MPH: <span id="outputMPHk"></span></p>
+<p>Knots: <span id="outputKnotsk"></span></p>
+<p>KNOTS->OTHER UNITS:</p>
+
+<p>
+  <label>Knots</label>
+  <input id="inputMPH" type="number" placeholder="Knots" oninput="speedConverterc(this.value)" onchange="speedConverterc(this.value)">
+</p>
+<p>KPH: <span id="outputKPHkn"></span></p>
+<p>MPH: <span id="outputMPHkn"></span></p>
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+  document.getElementById("outputKnots").innerHTML=valNum/1.150779;
+}
+function speedConverterb(valNum) {
+  document.getElementById("outputMPHk").innerHTML=valNum/1.609344;
+  document.getElementById("outputKnotsk").innerHTML=valNum/1.852;
+}
+function speedConverterc(valNum) {
+  document.getElementById("outputKPHkn").innerHTML=valNum*1.852;
+  document.getElementById("outputMPHkn").innerHTML=valNum*1.150799;
+}
+</script>
+
+</body>
+</html>
+
+
+<!--mass.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#EEE8AA;
+}
+</style>
+</head>
+<title>MASS CONVERTER</title>
+<body>
+<img src="https://images-na.ssl-images-amazon.com/images/I/611UzP1UTSL._SY355_.png" width="100" height="50"> <b><u>MASS CONVERTER:</u></b><br>
+<p>POUNDS->OTHER UNITS:</p>
+
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
+<p>Ounces: <span id="outputOunces"></span></p>
+<p>Grams: <span id="outputGrams"></span></p>
+<p>KILOGRAMS->OTHER UNITS:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputPounds" type="number" placeholder="Kilograms" oninput="weightConverterb(this.value)" onchange="weightConverterb(this.value)">
+</p>
+<p>Pounds: <span id="outputPoundski"></span></p>
+<p>Ounces: <span id="outputOunceski"></span></p>
+<p>Grams: <span id="outputGramski"></span></p>
+<p>OUNCES->OTHER UNITS:</p>
+
+<p>
+  <label>Ounces</label>
+  <input id="inputPounds" type="number" placeholder="Ounces" oninput="weightConverterc(this.value)" onchange="weightConverterc(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilogramsou"></span></p>
+<p>Pounds: <span id="outputPoundsou"></span></p>
+<p>Grams: <span id="outputGramsou"></span></p>
+<p>GRAMS->OTHER UNITS:</p>
+
+<p>
+  <label>Grams</label>
+  <input id="inputPounds" type="number" placeholder="Grams" oninput="weightConverterd(this.value)" onchange="weightConverterd(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilogramsgr"></span></p>
+<p>Ounces: <span id="outputOuncesgr"></span></p>
+<p>Pounds: <span id="outputPoundsgr"></span></p>
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+  document.getElementById("outputOunces").innerHTML=valNum*16;
+  document.getElementById("outputGrams").innerHTML=valNum/0.0022046;
+}
+function weightConverterb(valNum) {
+  document.getElementById("outputPoundski").innerHTML=valNum*2.2046;
+  document.getElementById("outputOunceski").innerHTML=valNum*35.274;
+  document.getElementById("outputGramski").innerHTML=valNum*0.1574;
+}
+function weightConverterc(valNum) {
+  document.getElementById("outputKilogramsou").innerHTML=valNum/35.274;
+  document.getElementById("outputPoundsou").innerHTML=valNum*0.0625;
+  document.getElementById("outputGramsou").innerHTML=valNum/0.035274;
+}
+function weightConverterd(valNum) {
+  document.getElementById("outputKilogramsgr").innerHTML=valNum/1000;
+  document.getElementById("outputOuncesgr").innerHTML=valNum*0.035274;
+  document.getElementById("outputPoundsgr").innerHTML=valNum*0.0022046;
+}
+</script>
+
+</body>
+</html>
+
+
+<!--time.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:#00FA9A;
+}
+</style>
+</head>
+<title>TIME CONVERTER</title>
+<body>
+<img src="https://c.tadst.com/gfx/1200x630/timezone-converter.png?1" width="100" height="50"> <b><u>TIME CONVERTER:</u></b><br>
+<p>DAYS->OTHER UNTS:</p>
+
+<p>
+  <label>Days</label>
+  <input id="inputPounds" type="number" placeholder="Days" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Hours: <span id="outputHours"></span></p>
+<p>Minutes: <span id="outputMinutes"></span></p>
+<p>Seconds: <span id="outputSeconds"></span></p>
+<p>HOURS->OTHER UNITS:</p>
+
+<p>
+  <label>Hours</label>
+  <input id="inputPounds" type="number" placeholder="Hours" oninput="weightConverterb(this.value)" onchange="weightConverterb(this.value)">
+</p>
+<p>Days: <span id="outputDaysho"></span></p>
+<p>Minutes: <span id="outputMinutesho"></span></p>
+<p>Seconds: <span id="outputSecondsho"></span></p>
+<p>MINUTES->OTHER UNITS:</p>
+
+<p>
+  <label>Minutes</label>
+  <input id="inputPounds" type="number" placeholder="Minutes" oninput="weightConverterc(this.value)" onchange="weightConverterc(this.value)">
+</p>
+<p>Hours: <span id="outputHoursmi"></span></p>
+<p>Days: <span id="outputDaysmi"></span></p>
+<p>Seconds: <span id="outputSecondsmi"></span></p>
+<p>SECONDS->OTHER UNITS:</p>
+
+<p>
+  <label>Seconds</label>
+  <input id="inputPounds" type="number" placeholder="Seconds" oninput="weightConverterd(this.value)" onchange="weightConverterd(this.value)">
+</p>
+<p>Hours: <span id="outputHoursse"></span></p>
+<p>Minutes: <span id="outputMinutesse"></span></p>
+<p>Days: <span id="outputDaysse"></span></p>
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputHours").innerHTML=valNum*24;
+  document.getElementById("outputMinutes").innerHTML=valNum*1440;
+  document.getElementById("outputSeconds").innerHTML=valNum*86400;
+}
+function weightConverterb(valNum) {
+  document.getElementById("outputDaysho").innerHTML=valNum/24;
+  document.getElementById("outputMinutesho").innerHTML=valNum*60;
+  document.getElementById("outputSecondsho").innerHTML=valNum*3600;
+}
+function weightConverterc(valNum) {
+  document.getElementById("outputHoursmi").innerHTML=valNum/60;
+  document.getElementById("outputDaysmi").innerHTML=valNum/1440;
+  document.getElementById("outputSecondsmi").innerHTML=valNum*60;
+}
+function weightConverterd(valNum) {
+  document.getElementById("outputHoursse").innerHTML=valNum/3600;
+  document.getElementById("outputMinutesse").innerHTML=valNum/60;
+  document.getElementById("outputDaysse").innerHTML=valNum/86400;
+}
+</script>
+
+</body>
+</html>
